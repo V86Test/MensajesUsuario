@@ -1,5 +1,6 @@
 package com.entrevista.test.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,7 +19,7 @@ import javax.persistence.TemporalType;
  * @author Victor Manuel Sanchez (vmso86@gmail.com)
  */
 @MappedSuperclass
-public abstract class EntityBase {
+public abstract class EntityBase implements Serializable{
 
     /**
      * Id of entity
@@ -103,7 +104,4 @@ public abstract class EntityBase {
     public void setModificationDate(Date modificationDate) {
         this.modificationDate = modificationDate;
     }
-    
-    
-
 }

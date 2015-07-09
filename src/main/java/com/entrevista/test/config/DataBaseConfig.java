@@ -26,7 +26,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableJpaRepositories(basePackages = {"com.entrevista.test.repository"})
 @EnableTransactionManagement
-@PropertySource("classpath:persistence.properties")
+@PropertySource("classpath:config.properties")
 public class DataBaseConfig {
 
     //Data base properties
